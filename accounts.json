@@ -1,0 +1,246 @@
+{
+  "accounts": [
+    {
+      "id": "account-1001",
+      "username": "donald.wilson",
+      "name": "Donald",
+      "accountNumber": "1982534651",
+      "accountType": "Everyday Checking",
+      "passwordHash": "$2a$12$AmXrk1dD/dqF2g6GrfYFB.n5mpahcdMwtzfcroJDasaLQWXgFaVSC",
+      "checkingBalance": 966054,
+      "savingsBalance": 41572,
+      "savingsAccountNumber": "1982534652"
+    },
+    {
+      "id": "account-1002",
+      "username": "montalvo.marcus",
+      "name": "Montalvo Marcus",
+      "accountNumber": "9823656743",
+      "accountType": "Everyday Checking",
+      "passwordHash": "$2a$12$/PeJApZ5YOvelTvEtdANf.IQkabeb1o7d9x6TcPOlw7a0fh75CR8u",
+      "checkingBalance": 675257,
+      "savingsBalance": 20937,
+      "savingsAccountNumber": "9823656744"
+    },
+    {
+      "id": "account-1003",
+      "username": "donald.victor",
+      "name": "Victor",
+      "accountNumber": "2982534694",
+      "accountType": "Everyday Checking",
+      "passwordHash": "$2a$12$AmXrk1dD/dqF2g6GrfYFB.n5mpahcdMwtzfcroJDasaLQWXgFaVSC",
+      "checkingBalance": 316054,
+      "savingsBalance": 42572,
+      "savingsAccountNumber": "2982534695"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TX-SIM-001",
+      "accountId": "account-1001",
+      "accountType": "checking",
+      "type": "Deposit",
+      "amount": "2500.00",
+      "description": "Mobile Check Deposit — Checking",
+      "createdAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "TX-SIM-002",
+      "accountId": "account-1001",
+      "accountType": "checking",
+      "type": "Withdrawal",
+      "amount": "-500.00",
+      "description": "ATM Withdrawal — Checking",
+      "createdAt": "2026-10-08T12:30:00.000Z"
+    },
+    {
+      "id": "TX1791983960379EFXRM",
+      "accountId": "account-1001",
+      "accountType": "checking",
+      "type": "Deposit",
+      "amount": "1000.00",
+      "description": "Deposit — Checking",
+      "createdAt": "2026-10-14T13:19:20.379Z"
+    },
+    {
+      "id": "TX1791984081659MC1VY",
+      "accountId": "account-1001",
+      "accountType": "savings",
+      "type": "Deposit",
+      "amount": "50000.00",
+      "description": "Deposit — Savings",
+      "createdAt": "2026-10-14T13:21:21.659Z"
+    },
+    {
+      "id": "TX1791984085622X03J3",
+      "accountId": "account-1001",
+      "accountType": "savings",
+      "type": "Withdrawal",
+      "amount": ".00",
+      "description": "Withdrawal — Savings",
+      "createdAt": "2010-10-14T13:21:25.622Z"
+    },
+    {
+      "id": "TX1791984386772HESYT",
+      "accountId": "account-1001",
+      "accountType": "savings",
+      "type": "Deposit",
+      "amount": "100000.00",
+      "description": "Deposit — Savings",
+      "createdAt": "2026-10-14T13:26:26.772Z"
+    },
+    {
+      "id": "TX1791984393982JOZTD",
+      "accountId": "account-1001",
+      "accountType": "savings",
+      "type": "Transfer",
+      "amount": "-50000.00",
+      "description": "Transfer to account ending 0002",
+      "createdAt": "2026-10-14T13:26:33.982Z"
+    },
+    {
+      "id": "TX17919843939825ONX4",
+      "accountId": "account-1002",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "50000.00",
+      "description": "Transfer from account ending 0001",
+      "createdAt": "2026-10-14T13:26:33.982Z"
+    },
+    {
+      "id": "TX1791984494992V0W43",
+      "accountId": "account-1001",
+      "accountType": "savings",
+      "type": "Transfer",
+      "amount": "-20000.00",
+      "description": "Transfer to account ending 0002",
+      "createdAt": "2026-10-14T13:28:14.992Z"
+    },
+    {
+      "id": "TX1791984494992VBI6C",
+      "accountId": "account-1002",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "20000.00",
+      "description": "Transfer from account ending 0001",
+      "createdAt": "2026-10-14T13:28:14.992Z"
+    },
+    {
+      "id": "TX1791984570390W62K5",
+      "accountId": "account-1002",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "-100000.00",
+      "description": "Transfer to account ending 0001",
+      "createdAt": "2026-10-14T13:29:30.390Z"
+    },
+    {
+      "id": "TX17919845703900FWT3",
+      "accountId": "account-1001",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "100000.00",
+      "description": "Transfer from account ending 0002",
+      "createdAt": "2026-10-14T13:29:30.390Z"
+    },
+    {
+      "id": "TX1791985444307M6WL2",
+      "accountId": "account-1002",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "-1232.00",
+      "description": "Transfer to account ending 4651",
+      "createdAt": "2026-10-14T13:44:04.307Z"
+    },
+    {
+      "id": "TX1791985444307I7P72",
+      "accountId": "account-1001",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "1232.00",
+      "description": "Transfer from account ending 6743",
+      "createdAt": "2026-10-14T13:44:04.307Z"
+    },
+    {
+      "id": "TX1791985462860U82IF",
+      "accountId": "account-1002",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "-100000.00",
+      "description": "Transfer to account ending 4651",
+      "createdAt": "2026-10-14T13:44:22.860Z"
+    },
+    {
+      "id": "TX17919854628605HVFQ",
+      "accountId": "account-1001",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "100000.00",
+      "description": "Transfer from account ending 6743",
+      "createdAt": "2026-10-14T13:44:22.860Z"
+    },
+    {
+      "id": "TX1791986309876A7OE6",
+      "accountId": "account-1001",
+      "accountType": "checking",
+      "type": "Deposit",
+      "amount": "200.00",
+      "description": "Deposit — Checking",
+      "createdAt": "2026-10-14T13:58:29.876Z"
+    },
+    {
+      "id": "TX1791986625497SS4P2",
+      "accountId": "account-1001",
+      "accountType": "checking",
+      "type": "Deposit",
+      "amount": "100.00",
+      "description": "Deposit — Checking",
+      "createdAt": "2026-10-14T14:03:45.497Z"
+    },
+    {
+      "id": "TX1791986791425G88FI",
+      "accountId": "account-1001",
+      "accountType": "savings",
+      "type": "Deposit",
+      "amount": "1927.00",
+      "description": "Deposit — Savings",
+      "createdAt": "2026-10-14T14:06:31.425Z"
+    },
+    {
+      "id": "TX1791986805476ZRDIZ",
+      "accountId": "account-1001",
+      "accountType": "savings",
+      "type": "Withdrawal",
+      "amount": "-355.00",
+      "description": "Withdrawal — Savings",
+      "createdAt": "2026-10-14T14:06:45.476Z"
+    },
+    {
+      "id": "TX1791987166592WRDRE",
+      "accountId": "account-1001",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "-300000.00",
+      "description": "Transfer to account ending 4694",
+      "createdAt": "2026-10-14T14:12:46.592Z"
+    },
+    {
+      "id": "TX1791987166592LKDXS",
+      "accountId": "account-1003",
+      "accountType": "checking",
+      "type": "Transfer",
+      "amount": "300000.00",
+      "description": "Transfer from account ending 4651",
+      "createdAt": "2026-10-14T14:12:46.592Z"
+    },
+    {
+      "id": "TX1792020023837M4JBO",
+      "accountId": "account-1003",
+      "accountType": "savings",
+      "type": "Deposit",
+      "amount": "1000.00",
+      "description": "Deposit — Savings",
+      "createdAt": "2026-10-14T23:20:23.837Z"
+    }
+  ]
+}

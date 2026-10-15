@@ -1,0 +1,553 @@
+:root {
+  --nfcu-navy: #002B49;
+  --nfcu-bright-blue: #005A9C;
+  --nfcu-teal: #088199;
+  --nfcu-gold: #E8B00F;
+  --nfcu-light-bg: #FAFAF9;
+  --nfcu-border: #D1D5DB;
+  --nfcu-dark-text: #1F2937;
+  --nfcu-muted-text: #57657A;
+  --nfcu-white: #FFFFFF;
+  --nfcu-shadow: 0 12px 32px rgba(0, 43, 73, 0.08);
+  --nfcu-green: #107C41;
+  --nfcu-red: #C42B1C;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--nfcu-light-bg);
+  color: var(--nfcu-dark-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.nfcu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nfcu-top-utility {
+  background: #001A2C;
+  color: var(--nfcu-white);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 8px 0;
+}
+.nfcu-top-utility .nfcu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nfcu-top-links a {
+  color: var(--nfcu-white);
+  text-decoration: none;
+  margin-left: 18px;
+}
+.nfcu-top-links a:hover { color: var(--nfcu-gold); }
+
+.nfcu-header-main {
+  background: var(--nfcu-navy);
+  border-bottom: 4px solid var(--nfcu-teal);
+  padding: 16px 0;
+}
+.nfcu-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nfcu-brand-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+.nfcu-logo-badge {
+  display: inline-flex;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  border: 2px solid var(--nfcu-white);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.nfcu-badge-n { background: var(--nfcu-white); color: var(--nfcu-navy); padding: 4px 8px; }
+.nfcu-badge-f { background: var(--nfcu-gold); color: var(--nfcu-navy); padding: 4px 8px; }
+.nfcu-brand-title {
+  color: var(--nfcu-white);
+  display: flex;
+  flex-direction: column;
+}
+.nfcu-brand-title strong { font-size: 16px; }
+.nfcu-brand-title small { font-size: 9px; color: #94A3B8; letter-spacing: 1.5px; }
+
+.nfcu-secure-status {
+  font-size: 12px;
+  color: #4ADE80;
+  font-weight: 700;
+  background: rgba(255,255,255,0.08);
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+main { padding: 44px 0 72px; }
+
+.nfcu-login-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+.nfcu-promo-panel h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  color: var(--nfcu-navy);
+  margin: 0 0 16px;
+}
+.nfcu-promo-panel h1 span { color: var(--nfcu-bright-blue); }
+.nfcu-promo-panel p {
+  font-size: 16px;
+  color: var(--nfcu-muted-text);
+  line-height: 1.6;
+}
+.nfcu-card {
+  background: var(--nfcu-white);
+  border: 1px solid var(--nfcu-border);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: var(--nfcu-shadow);
+}
+.nfcu-card h2 { font-size: 24px; color: var(--nfcu-navy); margin: 0 0 16px; }
+
+label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 16px 0 6px;
+  text-transform: uppercase;
+}
+input, select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--nfcu-border);
+  border-radius: 6px;
+  padding: 0 14px;
+  font: inherit;
+  outline: none;
+  margin-bottom: 12px;
+  color: var(--nfcu-dark-text);
+  background-color: var(--nfcu-white);
+}
+input:focus { border-color: var(--nfcu-bright-blue); }
+
+.nfcu-btn-primary {
+  width: 100%;
+  height: 44px;
+  border: 0;
+  background: var(--nfcu-navy);
+  color: var(--nfcu-white);
+  font: inherit;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.nfcu-btn-primary:hover { background: #001F36; }
+.error-msg { color: var(--nfcu-red); font-weight: 600; margin-top: 12px; }
+
+.nfcu-dash-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--nfcu-border);
+  padding-bottom: 16px;
+  margin-bottom: 28px;
+}
+.nfcu-dash-heading h1 { font-size: 28px; color: var(--nfcu-navy); margin: 0; }
+.nfcu-btn-outline {
+  border: 1px solid var(--nfcu-muted-text);
+  color: var(--nfcu-navy);
+  background: var(--nfcu-white);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nfcu-dash-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+.nfcu-account-cards { display: flex; flex-direction: column; gap: 16px; }
+.nfcu-ledger-card {
+  background: linear-gradient(135deg, var(--nfcu-navy), #004578);
+  color: var(--nfcu-white);
+  border-radius: 8px;
+  padding: 24px;
+}
+.nfcu-ledger-meta { display: flex; justify-content: space-between; font-size: 12px; }
+.mini-chip { border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; padding: 2px 6px; font-size: 9px; font-weight: 700; }
+.nfcu-ledger-amt { font-size: 32px; font-weight: 700; margin: 8px 0; }
+.nfcu-ledger-num { display: flex; justify-content: space-between; font-size: 12px; color: #CBD5E1; }
+
+.nfcu-summary-sidebar {
+  background: var(--nfcu-white);
+  border: 1px solid var(--nfcu-border);
+  border-radius: 8px;
+  padding: 24px;
+}
+.nfcu-summary-num { font-size: 20px; font-weight: 700; color: var(--nfcu-navy); display: block; margin: 8px 0; }
+.nfcu-active-tag { color: var(--nfcu-green); font-weight: 700; }
+
+.nfcu-section-title { font-size: 20px; color: var(--nfcu-navy); margin: 40px 0 16px; }
+.nfcu-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.nfcu-action-box {
+  background: var(--nfcu-white);
+  border: 1px solid var(--nfcu-border);
+  border-radius: 8px;
+  padding: 20px;
+}
+.nfcu-action-box h3 { margin: 0 0 12px; color: var(--nfcu-navy); border-bottom: 1px solid var(--nfcu-border); padding-bottom: 6px; }
+
+.nfcu-activity-card {
+  background: var(--nfcu-white);
+  border: 1px solid var(--nfcu-border);
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 32px;
+}
+.nfcu-activity-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+table { width: 100%; border-collapse: collapse; }
+th { background: #F8FAFC; padding: 12px; text-align: left; border-bottom: 2px solid var(--nfcu-border); font-size: 11px; text-transform: uppercase; }
+td { padding: 12px; border-bottom: 1px solid var(--nfcu-border); color: var(--nfcu-dark-text); }
+.amt-col { text-align: right; font-weight: 700; }
+.pos-amt { color: var(--nfcu-green); }
+
+.toast {
+  position: fixed; bottom: 24px; right: 24px; background: #1E293B; color: #FFF; padding: 12px 24px; border-radius: 6px; display: none; font-weight: 600;
+}
+.toast.show { display: block; }
+.toast.error { background: var(--nfcu-red); }
+
+.nfcu-footer {
+  background: var(--nfcu-navy);
+  color: #94A3B8;
+  padding: 40px 0;
+  border-top: 6px solid var(--nfcu-teal);
+  margin-top: 60px;
+}
+.nfcu-footer-grid { display: flex; gap: 60px; margin-bottom: 24px; }
+.nfcu-footer-col h3 { color: var(--nfcu-gold); font-size: 12px; text-transform: uppercase; margin-bottom: 12px; }
+.nfcu-footer-col ul { list-style: none; padding: 0; margin: 0; }
+.nfcu-footer-col li { margin-bottom: 8px; }
+.nfcu-footer-col a { color: #94A3B8; text-decoration: none; }
+.nfcu-footer-compliance { font-size: 11px; line-height: 1.5; }
+
+.hidden { display: none !important; }
+
+/* =======================================================
+   🆕 3-COLUMN AD OFFERS LAYOUT SECTION STYLES 
+   ======================================================= */
+.nfcu-promo-offers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.nfcu-offer-column {
+  background-color: #003359; /* Matching brand blue column background */
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.nfcu-offer-column h2 {
+  color: #ffffff !important;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 24px 0;
+  min-height: 75px;
+  letter-spacing: -0.2px;
+}
+.nfcu-offer-btn {
+  display: inline-block;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  transition: background 0.2s, color 0.2s;
+}
+.nfcu-offer-btn:hover {
+  background: #ffffff;
+  color: #003359;
+}
+.nfcu-image-wrapper {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+@media (max-width: 968px) {
+  .nfcu-promo-offers-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .nfcu-offer-column h2 {
+    min-height: auto;
+  }
+}
+/* =======================================================
+   🆕 REPLICATED ADDITIONAL SECTIONS & COMPREHENSIVE FOOTER
+   ======================================================= */
+
+/* Badges Ribbon */
+.nfcu-press-badges-ribbon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--nfcu-border);
+  margin-top: 40px;
+  background: var(--nfcu-white);
+  padding: 24px;
+  border-radius: 4px;
+}
+.nfcu-press-title {
+  font-weight: 800;
+  color: var(--nfcu-navy);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.nfcu-badges-container {
+  display: flex;
+  gap: 20px;
+}
+.nfcu-badge-mock {
+  border: 1px solid var(--nfcu-border);
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  border-radius: 4px;
+  background: #F8FAFC;
+}
+.special-best { background: #C42B1C; color: #fff; border-color: #C42B1C; }
+.Fortune-100 { background: #0F172A; color: #fff; border-color: #0F172A; }
+
+/* Eligibility Panel Layout */
+.nfcu-eligibility-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  background: #EBF3FC;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 40px;
+  align-items: center;
+}
+.nfcu-panel-eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--nfcu-bright-blue);
+  letter-spacing: 1px;
+  display: block;
+}
+.nfcu-eligibility-content h2 {
+  font-size: 28px;
+  color: var(--nfcu-navy);
+  margin: 10px 0;
+}
+.nfcu-eligibility-content p {
+  color: var(--nfcu-muted-text);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.nfcu-eligibility-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.nfcu-btn-orange {
+  background: #FF7A00;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.nfcu-link-blue {
+  color: var(--nfcu-bright-blue);
+  text-decoration: underline;
+  font-weight: 700;
+}
+.nfcu-eligibility-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.nfcu-eligibility-item {
+  color: var(--nfcu-navy);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.nfcu-eligibility-item:hover { color: var(--nfcu-bright-blue); }
+.nfcu-eligibility-image-placeholder {
+  width: 100%;
+  height: 240px;
+  background-image: url('https://unsplash.com');
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+/* Treatment Mid-Banner */
+.nfcu-treatment-banner {
+  background: var(--nfcu-navy);
+  padding: 40px;
+  border-radius: 6px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.nfcu-treatment-text h2 { font-size: 32px; margin: 12px 0 20px; }
+.nfcu-journey-link { color: #fff; font-weight: 700; text-decoration: underline; }
+.nfcu-treatment-graphics {
+  position: relative;
+  width: 300px;
+  height: 180px;
+}
+.nfcu-card-front {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+.nfcu-card-back {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 60px;
+  opacity: 0.8;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+/* Phenom Section styling */
+.nfcu-phenom-section {
+  text-align: center;
+  padding: 60px 0;
+  margin-top: 40px;
+}
+.nfcu-phenom-eyebrow { font-size: 12px; font-weight: 700; color: var(--nfcu-muted-text); }
+.nfcu-phenom-section h2 { font-size: 32px; color: var(--nfcu-navy); margin: 12px 0 40px; }
+.nfcu-phenom-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.nfcu-phenom-icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.nfcu-phenom-icon-box span { font-weight: 700; color: var(--nfcu-navy); font-size: 15px; }
+.nfcu-icon-shape {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--nfcu-bright-blue);
+  border-radius: 50%;
+  position: relative;
+}
+.nfcu-icon-shape::before {
+  content: "✦";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: var(--nfcu-bright-blue);
+}
+
+/* Replicated Full Specifications Footer Layout */
+.nfcu-replicated-footer {
+  background-color: var(--nfcu-navy);
+  color: #E2E8F0;
+  padding: 40px 0 60px;
+  font-size: 13px;
+  border-top: 6px solid var(--nfcu-teal);
+  margin-top: 60px;
+}
+.nfcu-footer-services-bar {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.nfcu-footer-services-bar strong { color: #fff; font-size: 17px; }
+.nfcu-divider-pipe { margin: 0 15px; color: rgba(255,255,255,0.3); }
+.nfcu-footer-directory-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.nfcu-directory-links a { color: #CBD5E1; text-decoration: none; margin: 0 2px; }
+.nfcu-directory-links a:hover { color: #fff; text-decoration: underline; }
+.nfcu-social-icons-mock span {
+  background: rgba(255,255,255,0.1);
+  width: 32px;
+  height: 32px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-left: 8px;
+  color: #fff;
+  font-weight: bold;
+}
+.nfcu-footer-line-break { border: 0; border-top: 1px solid rgba(255,255,255,0.15); margin: 24px 0; }
+.nfcu-regulatory-accreditations { display: flex; align-items: center; margin-bottom: 24px; flex-wrap: wrap; }
+.nfcu-compliance-badge-ncua { background: #fff; color: var(--nfcu-navy); padding: 2px 6px; font-weight: 900; font-size: 11px; margin-right: 8px; border-radius: 2px; }
+.nfcu-compliance-badge-house { font-size: 20px; color: #fff; margin-right: 8px; line-height: 1; }
+.nfcu-compliance-link { color: #fff; text-decoration: none; font-weight: 600; }
+.nfcu-compliance-link:hover { text-decoration: underline; }
+.nfcu-legal-footnotes-wrapper { color: #94A3B8; font-size: 12px; line-height: 1.6; margin-bottom: 30px; }
+.nfcu-legal-footnotes-wrapper p { margin: 12px 0; }
+.nfcu-footer-bottom-branding { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; color: #94A3B8; font-size: 12px; }
+.nfcu-bottom-logo { color: #fff; font-size: 14px; }
+
+@media (max-width: 868px) {
+  .nfcu-eligibility-panel, .nfcu-treatment-banner, .nfcu-footer-directory-row, .nfcu-footer-bottom-branding { grid-template-columns: 1fr; flex-direction: column; align-items: flex-start; gap: 24px; }
+  .nfcu-phenom-icons-grid { grid-template-columns: 1fr 1fr; }
+}
